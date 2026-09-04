@@ -1,5 +1,0 @@
-git add .
-git commit -m "Complete 5-stage pipeline simulation verification"
-git tag -a v0.1-simulation -m "FlexRISC16 5-stage pipeline simulation verified"
-git push origin main
-git push origin v0.1-simulation
