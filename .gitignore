@@ -1,0 +1,42 @@
+# Vivado project files
+*.jou
+*.log
+*.str
+*.backup.log
+
+# Vivado generated directories
+.vivado/
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.gen/
+xsim.dir/
+webtalk/
+webtalk.jou
+webtalk.log
+
+# Vivado project/run files
+*.xpr
+*.runs/
+*.data/
+*.ltx
+
+# Simulation generated files
+*.wdb
+*.pb
+*.wcfg
+
+# Temporary/editor files
+.vscode/
+*.swp
+*.tmp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc

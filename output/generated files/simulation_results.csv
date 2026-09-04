@@ -1,0 +1,36 @@
+No.,Test,Status,Actual,Expected
+1,       ADD (fwd),PASS,000d,000d
+2,       SUB (fwd),PASS,0007,0007
+3,       AND (fwd),PASS,0002,0002
+4,        OR (fwd),PASS,000b,000b
+5,       XOR (fwd),PASS,0009,0009
+6,       NOT (fwd),PASS,fff5,fff5
+7,       SHL (fwd),PASS,0014,0014
+8,       SHR (fwd),PASS,0005,0005
+9,V sign-extend -1,PASS,ffff,ffff
+10,            LOAD,PASS,1234,1234
+11,r load-use stall,PASS,1237,1237
+12, ADD (pre-store),PASS,000d,000d
+13,(forwarded data),PASS,000d,000d
+14, of stored value,PASS,000d,000d
+15,BEQ taken (skip),PASS,0000,0000
+16,en (fallthrough),PASS,ffaa,ffaa
+17,BNE taken (skip),PASS,0000,0000
+18,en (fallthrough),PASS,ffaa,ffaa
+19,en (STATUS, gap),PASS,0000,0000
+20,      JMP (skip),PASS,0000,0000
+21,ial continuation,PASS,0055,0055
+22,0 hardwired zero,PASS,0000,0000
+
+Performance,Value
+Cycles,52
+Instructions Retired,39
+Stalls,1
+Branches,6
+Branches Taken,4
+Forwarding Events,4
+
+Summary,Value
+Total Checks,22
+Passed,22
+Failed,0
